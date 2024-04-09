@@ -1,4 +1,4 @@
-module github.com/alexyang/geoip-check
+module github.com/alexyangmj/geoip-check
 
 go 1.22.1
 
