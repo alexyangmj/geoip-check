@@ -4,6 +4,7 @@ Return geolocation info (country, city, timezone, lat, long) in bulk using MaxMi
 The binary for MacOS (compiled on Sonoma 14.x) is included in this repository.
 
 Usage: ./geoip-check [IPv4/v6]
+
 Usage: ./geoip-check inputfile.txt (file extension must be .txt)
 
 Important:
