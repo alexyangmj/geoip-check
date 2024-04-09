@@ -11,5 +11,5 @@ GeoLite2-City.mmdb file must be present in your $HOME directory (that is: /Users
 For Linux's root user, your $HOME directory usually is /root
 For Windows, you'll need to re-compile geoip-check.go file and modify the source path to windows %%UserProfile% directory
 
-If you have any issue and need a little help, don't hesitate to DM me at Linkedin.
+If you have any issue and need a little help, don't hesitate to DM me at Linkedin OR open an issue.
 https://linkedin.com/in/4yang
