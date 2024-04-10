@@ -44,7 +44,7 @@ For Windows, you'll need to re-compile `geoip-check.go` file and modify the sour
 
 # If you have any issue and need a little help
 
-Please don't hesitate to DM me at *Linkedin* OR open an issue.
+Please don't hesitate to DM me at **Linkedin** OR open an issue.
 
 https://linkedin.com/in/4yang
 
