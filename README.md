@@ -5,7 +5,7 @@ Return geolocation info (country, city, timezone, lat, long) in bulk using MaxMi
 The binary for MacOS (compiled on Sonoma 14.x) is included in this repository.
 
 ```
-geoip-check v1.1a
+geoip-check v1.1b
 Last Update: 10 Apr 2024, Alex Yang (linkedin.com/in/4yang)
 
 Usage for Single IP query:
@@ -22,7 +22,7 @@ Cc  Show only source IP, Country, City
 
 Example:
    geoip-check 74.125.200.100
-   geoip-check 2607:f8b0:4003:0c00:0000:0000:0000:006a
+   geoip-check 2607:f8b0:4003:c00::6a
    geoip-check 74.125.200.101 Cc
    geoip-check 74.125.200.101 0C
 
