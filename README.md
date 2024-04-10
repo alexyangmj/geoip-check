@@ -24,14 +24,27 @@ Example:
    geoip-check 74.125.200.100
    geoip-check 2607:f8b0:4003:c00::6a
    geoip-check 74.125.200.101 Cc
-   geoip-check 74.125.200.101 0C
+   geoip-check 74.125.200.102 0C
+   
+Output:
+   % geoip-check 74.125.200.100
+   74.125.200.100,US,United States,,America/Chicago,37.751,-97.822
+
+   % geoip-check 2607:f8b0:4003:c00::6a
+   2607:f8b0:4003:c00::6a,US,United States,Tulsa,America/Chicago,36.16,-95.988
+
+   % geoip-check 74.125.200.101 0C
+   United States
+
+   % geoip-check 74.125.200.102 0T
+   America/Chicago
 
 Usage for Bulk IP query:
    geoip-check [inputfile.txt] --> file extension must be .txt
 
 Example:
    geoip-check input.txt
-   geoip-check input.txt 0Cc
+   geoip-check input.txt 0Cc 
 ```
 
 # Important:
