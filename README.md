@@ -4,6 +4,7 @@ Return geolocation info (country, city, timezone, lat, long) in bulk using MaxMi
 
 The binary for MacOS (compiled on Sonoma 14.x) is included in this repository.
 
+```
 geoip-check v1.1
 Last Update: 10 Apr 2024, Alex Yang (linkedin.com/in/4yang)
 
@@ -19,7 +20,6 @@ T   Show only source IP, Timezone
 L   Show only source IP, Latitude, Longitude
 Cc  Show only source IP, Country, City
 
-
 Example:
    geoip-check 74.125.200.100
    geoip-check 2607:f8b0:4003:0c00:0000:0000:0000:006a
@@ -32,8 +32,9 @@ Usage for Bulk IP query:
 Example:
    geoip-check input.txt
    geoip-check input.txt 0Cc
+```
 
-Important:
+# Important:
 
 GeoLite2-City.mmdb file must be present in your $HOME directory (that is: /Users/<yourusername> for MacOS  -OR-  /home/<yourusername> for most Linux distro)
 
@@ -41,8 +42,12 @@ For Linux's root user, your $HOME directory usually is /root
 
 For Windows, you'll need to re-compile geoip-check.go file and modify the source path to windows %%UserProfile% directory
 
-If you have any issue and need a little help, don't hesitate to DM me at Linkedin OR open an issue.
+# If you have any issue and need a little help
+
+Please don't hesitate to DM me at Linkedin OR open an issue.
 
 https://linkedin.com/in/4yang
 
-To contribute improving for this tool, please make a PR.
+# To contribute
+
+Please make a PR to help me improve this tool :)
