@@ -12,7 +12,7 @@ import (
 )
 
 func main() {
-    Banner := "geoip-check v1.1a\n"
+    Banner := "geoip-check v1.1b\n"
     Banner = Banner + "Last Update: 10 Apr 2024, Alex Yang (linkedin.com/in/4yang)\n\n"
     Banner = Banner + "Usage for Single IP query:\n"
     Banner = Banner + "   geoip-check [IPv4/v6] [Optional_Switch]\n\n"
@@ -64,7 +64,7 @@ func main() {
         return
     }
     
-    if strings.Count(inputIP, ".") != 3 && strings.Count(inputIP, ":") != 7 {
+    if strings.Count(inputIP, ".") != 3 && strings.Count(inputIP, ":") < 4 {
         if !strings.HasSuffix(inputIP, ".txt") { 
             fmt.Println(Banner)
             return
@@ -102,7 +102,7 @@ func main() {
    	    for scanner.Scan() {
             txtlines := scanner.Text()
             if len(txtlines) == 0 { continue }
-            if strings.Count(txtlines, ".") != 3 && strings.Count(txtlines, ":") != 7 {
+            if strings.Count(txtlines, ".") != 3 && strings.Count(txtlines, ":") < 4 {
                 fmt.Println("Error in line: [", errline, "] IP: [", txtlines, "] - check if IP address is in correct IPv4/v6 format!")
                 errline++
                 continue
