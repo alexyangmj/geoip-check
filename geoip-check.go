@@ -12,7 +12,7 @@ import (
 )
 
 func main() {
-    Banner := "geoip-check v1.1\n"
+    Banner := "geoip-check v1.1a\n"
     Banner = Banner + "Last Update: 10 Apr 2024, Alex Yang (linkedin.com/in/4yang)\n\n"
     Banner = Banner + "Usage for Single IP query:\n"
     Banner = Banner + "   geoip-check [IPv4/v6] [Optional_Switch]\n\n"
@@ -43,12 +43,9 @@ func main() {
 
     defer func() {
         if r := recover(); r != nil {
-            fmt.Println("We go to recover function!")
             fmt.Println(Banner) 
         }
     }()
-
-    fmt.Printf("Args Len: %v\n", len(os.Args))
 
     if len(os.Args) == 1  { 
         fmt.Println(Banner)
@@ -61,9 +58,6 @@ func main() {
         inputIP = os.Args[1]
         Switch  = os.Args[2] 
     }
-    
-    fmt.Printf("Input IP: %v\n", inputIP)
-    fmt.Printf("Switch Value: %v\n", Switch)
     
     if !strings.Contains(inputIP, ".") && !strings.Contains(inputIP, ":") {
         fmt.Println(Banner)
@@ -170,6 +164,8 @@ func main() {
                 fmt.Printf("%v,", record.Location.TimeZone)
                 fmt.Printf("%v,", record.Location.Latitude)
                 fmt.Printf("%v\n", record.Location.Longitude)
+            default:
+                fmt.Println("Unrecognized switch!")
             }
             errline++
         }
@@ -231,6 +227,8 @@ func main() {
             fmt.Printf("%v,", record.Location.TimeZone)
             fmt.Printf("%v,", record.Location.Latitude)
             fmt.Printf("%v\n", record.Location.Longitude)
+        default:
+            fmt.Println("Unrecognized switch!")
         }
     }
 }
