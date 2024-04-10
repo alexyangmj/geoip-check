@@ -23,7 +23,7 @@ Cc  Show only source IP, Country, City
 Example:
    geoip-check 74.125.200.100
    geoip-check 2607:f8b0:4003:c00::6a
-   geoip-check 74.125.200.101 Cc
+   geoip-check 113.20.105.19 Cc
    geoip-check 74.125.200.102 0C
    
 Output:
@@ -33,8 +33,8 @@ Output:
    % geoip-check 2607:f8b0:4003:c00::6a
    2607:f8b0:4003:c00::6a,US,United States,Tulsa,America/Chicago,36.16,-95.988
 
-   % geoip-check 74.125.200.101 0C
-   United States
+   % geoip-check 113.20.105.19 Cc
+   113.20.105.19,Vietnam,Hanoi
 
    % geoip-check 74.125.200.102 0T
    America/Chicago
