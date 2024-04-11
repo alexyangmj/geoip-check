@@ -13,7 +13,7 @@ import (
 
 func main() {
     Banner := "geoip-check v1.1c\n"
-    Banner = Banner + "Last Update: 11 Apr 2024, Alex Yang (linkedin.com/in/4yang)\n\n"
+    Banner = Banner + "Last Update: 12 Apr 2024, Alex Yang (linkedin.com/in/4yang)\n\n"
     Banner = Banner + "Usage for Single IP query:\n"
     Banner = Banner + "   geoip-check [IPv4/v6] [Optional_Switch]\n\n"
     Banner = Banner + "Optional_Switch for output format:\n"

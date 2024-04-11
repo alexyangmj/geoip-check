@@ -6,7 +6,7 @@ The binary for MacOS (compiled on Sonoma 14.x) is included in this repository.
 
 ```
 geoip-check v1.1c
-Last Update: 11 Apr 2024, Alex Yang (linkedin.com/in/4yang)
+Last Update: 12 Apr 2024, Alex Yang (linkedin.com/in/4yang)
 
 Usage for Single IP query:
    geoip-check [IPv4/v6] [Optional_Switch]
