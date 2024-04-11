@@ -12,20 +12,20 @@ Usage for Single IP query:
    geoip-check [IPv4/v6] [Optional_Switch]
 
 Optional_Switch for output format:
-0   Suppresss showing source IP
-I   Show only source IP, Country ISO Code
-C   Show only source IP, Country
-c   Show only source IP, City
-T   Show only source IP, Timezone
-L   Show only source IP, Latitude, Longitude
-Cc  Show only source IP, Country, City
+   0   Suppresss showing source IP
+   I   Show only source IP, Country ISO Code
+   C   Show only source IP, Country
+   c   Show only source IP, City
+   T   Show only source IP, Timezone
+   L   Show only source IP, Latitude, Longitude
+   Cc  Show only source IP, Country, City
 
 Example:
    geoip-check 74.125.200.100
-   geoip-check 2607:f8b0:4003:c00::6a
-   geoip-check 113.20.105.19 Cc
-   geoip-check 74.125.200.102 0C
-   
+   geoip-check 2607:f8b0:4003:0c00:0000:0000:0000:006a
+   geoip-check 74.125.200.101 Cc
+   geoip-check 74.125.200.101 0C
+
 Output:
    % geoip-check 74.125.200.100
    74.125.200.100,US,United States,,America/Chicago,37.751,-97.822
@@ -44,7 +44,7 @@ Usage for Bulk IP query:
 
 Example:
    geoip-check input.txt
-   geoip-check input.txt 0Cc 
+   geoip-check input.txt 0Cc
 ```
 
 # Important:
