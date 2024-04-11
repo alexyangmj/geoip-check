@@ -12,8 +12,8 @@ import (
 )
 
 func main() {
-    Banner := "geoip-check v1.1b\n"
-    Banner = Banner + "Last Update: 10 Apr 2024, Alex Yang (linkedin.com/in/4yang)\n\n"
+    Banner := "geoip-check v1.1c\n"
+    Banner = Banner + "Last Update: 11 Apr 2024, Alex Yang (linkedin.com/in/4yang)\n\n"
     Banner = Banner + "Usage for Single IP query:\n"
     Banner = Banner + "   geoip-check [IPv4/v6] [Optional_Switch]\n\n"
     Banner = Banner + "Optional_Switch for output format:\n"
@@ -36,10 +36,8 @@ func main() {
     Banner = Banner + "   geoip-check input.txt 0Cc\n\n"
     
     var inputIP     string
-    var Switch      string
-
-    isFile := false
-    Switch = "NIL"
+    var isFile      bool   = false
+    var Switch      string = "NIL"
 
     defer func() {
         if r := recover(); r != nil {

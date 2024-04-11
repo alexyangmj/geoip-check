@@ -5,8 +5,8 @@ Return geolocation info (country, city, timezone, lat, long) in bulk using MaxMi
 The binary for MacOS (compiled on Sonoma 14.x) is included in this repository.
 
 ```
-geoip-check v1.1b
-Last Update: 10 Apr 2024, Alex Yang (linkedin.com/in/4yang)
+geoip-check v1.1c
+Last Update: 11 Apr 2024, Alex Yang (linkedin.com/in/4yang)
 
 Usage for Single IP query:
    geoip-check [IPv4/v6] [Optional_Switch]
