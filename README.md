@@ -41,7 +41,7 @@ Output:
 
 Usage for Bulk IP query:
    geoip-check [inputfile.txt] --> file extension must be .txt
-
+   
 Example:
    geoip-check input.txt
    geoip-check input.txt 0Cc
