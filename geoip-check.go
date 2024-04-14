@@ -12,8 +12,8 @@ import (
 )
 
 func main() {
-    Banner := "geoip-check v1.1c\n"
-    Banner = Banner + "Last Update: 12 Apr 2024, Alex Yang (linkedin.com/in/4yang)\n\n"
+    Banner := "geoip-check v1.2\n"
+    Banner = Banner + "Last Update: 14 Apr 2024, Alex Yang (linkedin.com/in/4yang)\n\n"
     Banner = Banner + "Usage for Single IP query:\n"
     Banner = Banner + "   geoip-check [IPv4/v6] [Optional_Switch]\n\n"
     Banner = Banner + "Optional_Switch for output format:\n"
@@ -41,7 +41,7 @@ func main() {
 
     defer func() {
         if r := recover(); r != nil {
-            fmt.Println(Banner) 
+            fmt.Println("Can't process further. Seems a bug!")
         }
     }()
 
@@ -101,14 +101,14 @@ func main() {
             txtlines := scanner.Text()
             if len(txtlines) == 0 { continue }
             if strings.Count(txtlines, ".") != 3 && strings.Count(txtlines, ":") < 4 {
-                fmt.Println("Error in line: [", errline, "] IP: [", txtlines, "] - check if IP address is in correct IPv4/v6 format!")
+                fmt.Println("Error: line [", errline, "] IP: [", txtlines, "] - check if the format is correct")
                 errline++
                 continue
             }
             ip := net.ParseIP(txtlines)
             record, err := db.City(ip)
             if err != nil {
-                fmt.Println("Error in line: [", errline, "] IP: [", txtlines ,"] - check if IP address is in correct IPv4/v6 format!")
+                fmt.Println("Error: line [", errline, "] IP: [", txtlines, "] - check if the format is correct")
                 errline++
                 continue
             }
