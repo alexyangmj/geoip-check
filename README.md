@@ -2,7 +2,7 @@
 
 Return geolocation info (country, city, timezone, lat, long) in bulk using MaxMind Lite DB and Gregory Oschwald's geoip2-golang library
 
-The binary for MacOS (compiled on Sonoma 14.x) is included in this repository.
+The binary for MacOS (compiled on Sonoma 14.x with Intel processor x86-64) is included in this repository.
 
 ```
 geoip-check v1.2
